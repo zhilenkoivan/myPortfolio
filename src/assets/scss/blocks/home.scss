@@ -1,0 +1,38 @@
+.home{
+    margin-bottom: 100px;
+    align-items: center;
+    @include breakpoint($mini-tablet){
+        margin-bottom: 30px;
+    }
+}
+.home__text{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 40px;
+
+    text-transform: uppercase;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 29px;
+    color: #070707;
+    @include breakpoint($iphone){
+        font-size: 12px;
+        margin-bottom: 10px;
+    }
+}
+.home__text-item{
+    width: 130px;
+
+
+    @include breakpoint($iphone){
+        width: 80px;
+    }
+}
+
+.home-img{
+    display: block;
+    position: relative;
+    max-width: 100%;
+    height: auto;
+    box-shadow: 5px 5px 10px 5px rgba(34, 60, 80, 0.6);
+}

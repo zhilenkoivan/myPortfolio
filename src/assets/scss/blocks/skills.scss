@@ -1,0 +1,27 @@
+.skills{
+    padding-top: 90px;
+    text-align: center;
+    align-items: center;
+    padding-bottom: 110px;
+    @include breakpoint($mini-tablet){
+        padding-bottom: 55px;
+        padding-top: 45px;
+    }
+    @include breakpoint($iphone){
+        padding-bottom: 35px;
+        padding-top: 25px;
+    }
+}
+.skills-title{
+    margin-bottom: 69px;
+    @include breakpoint($tablet){
+        margin-bottom: 20px;
+    }
+}
+.skills-subtitle{
+    font-size: 18px;
+    line-height: 22px;
+    color: #070707;
+    margin-bottom: 69px;
+}
+

@@ -1,0 +1,44 @@
+
+.footer-title{
+    padding-top: 50px;
+    @include breakpoint($mini-tablet){
+        padding-top: 25px;
+    }
+}
+.footer__icons{
+    margin-top: 50px;
+    margin-bottom: 50px;
+    display: flex;
+    justify-content: center;
+    @include breakpoint($mini-tablet){
+        margin-bottom: 25px;
+        margin-top: 25px;
+    }
+}
+.footer-link{
+    display: block;
+    transition: transform .2s linear;
+    &:not(:last-child){
+        margin-right: 60px;
+        @include breakpoint($iphone){
+            margin-right: 30px;
+        }
+    }
+    &:hover{
+        transform: scale(1.05);
+    }
+}
+.footer-icon{
+    width: 40px;
+    height: 100%;
+    @include breakpoint($iphone){
+        width: 30px;
+    }
+}
+.footer-text{
+    font-size: 14px;
+    line-height: 17px;
+    text-align: center;
+    color: #828282;
+    margin-bottom: 40px;
+}

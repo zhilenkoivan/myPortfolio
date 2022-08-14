@@ -1,0 +1,27 @@
+header{
+    display: flex;
+    width: 100%;
+    position: fixed;
+    height: 87px;
+    right: 0;
+    top: 0;
+    z-index: 100;
+    background-color: #fff;
+    border-bottom: 1px solid #828282;
+    @include breakpoint($mobile){
+        height: 50px;
+    }
+    animation: header-open .6s ease-in-out 1;
+
+    @keyframes header-open {
+        0%{
+            transform: translateY(-70%);
+        }
+        100%{
+            transform: translateY(0);
+        }
+    }
+}
+.post{
+    height: 60px;
+}

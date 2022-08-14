@@ -1,0 +1,14 @@
+.title{
+    font-size: 34px;
+    font-weight: 700;
+    line-height: 42px;
+    text-align: center;
+    color: #070707;
+    margin-bottom: 18px;
+    @include breakpoint(992px){
+        margin-bottom: 0;
+    }
+    @include breakpoint($mini-tablet){
+        font-size: 24px;
+    }
+}

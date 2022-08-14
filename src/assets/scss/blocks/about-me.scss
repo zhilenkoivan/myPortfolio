@@ -1,0 +1,40 @@
+.about{
+    background: #F6F6F6;
+    padding-top: 120px;
+    padding-bottom: 80px;
+    @include breakpoint($mini-tablet){
+        padding-bottom: 55px;
+        padding-top: 45px;
+    }
+    @include breakpoint($iphone){
+        padding-bottom: 35px;
+        padding-top: 25px;
+    }
+}
+.about-wrapper{
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+}
+.about-me{
+    display: block;
+    font-size: 18px;
+    line-height: 22px;
+    text-align: center;
+    color: #070707;
+    margin-bottom: 30px;
+    &--one{
+        width: 450px;
+    }
+    &--two{
+        width: 430px;
+    }
+    &--three{
+        width: 350px;
+    }
+    @include breakpoint($iphone){
+        font-size: 12px;
+        margin-bottom: 10px;
+        width: 300px;
+    }
+}

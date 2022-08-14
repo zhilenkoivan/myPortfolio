@@ -1,0 +1,40 @@
+@import "reset.scss";
+@import "vars.scss";
+@import "mixin.scss";
+@font-face {
+    font-family: 'Gilroy';
+    src: url('/assets/fonts/Gilroy-Medium.woff');
+    
+    font-weight: 500;
+    font-style: normal;
+}
+
+
+@font-face {
+    font-family: 'Gilroy';
+    src: url('/assets/fonts/Gilroy-Bold.woff');
+    font-weight: 700;
+    font-style: normal;
+}
+
+
+@import "blocks/header.scss";
+@import "blocks/footer.scss";
+@import "blocks/sidebar.scss";
+@import "blocks/burger.scss";
+@import "blocks/slider.scss";
+@import "blocks/main.scss";
+@import "blocks/home.scss";
+@import "blocks/btn-back.scss";
+@import "blocks/nav.scss";
+@import "blocks/post.scss";
+@import "blocks/container.scss";
+@import "blocks/about-me.scss";
+@import "blocks/title.scss";
+@import "blocks/portfolio.scss";
+@import "blocks/skills.scss";
+
+body{
+    font-family: 'Gilroy';
+    scroll-behavior: smooth;
+}
